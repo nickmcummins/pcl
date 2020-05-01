@@ -90,11 +90,7 @@ pcl::FieldComparison<PointT>::FieldComparison (
 template <typename PointT>
 pcl::FieldComparison<PointT>::~FieldComparison () 
 {
-  if (point_data_ != nullptr)
-  {
-    delete point_data_;
-    point_data_ = nullptr;
-  }
+  delete point_data_;
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -689,13 +685,14 @@ pcl::ConditionalRemoval<PointT>::applyFilter (PointCloud &output)
   output.points.resize (input_->points.size ());
   removed_indices_->resize (input_->points.size ());
 
-  int nr_p = 0;
   int nr_removed_p = 0;
 
   if (!keep_organized_)
   {
+    int nr_p = 0;
     for (std::size_t index: (*Filter<PointT>::indices_))
     {
+
       const PointT& point = input_->points[index];
       // Check if the point is invalid
       if (!std::isfinite (point.x)
