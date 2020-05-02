@@ -3,7 +3,7 @@
 
 #include <QGridLayout>
 
-#include <QVTKWidget.h>
+#include <QVTKOpenGLNativeWidget.h>
 
 pcl::cloud_composer::FPFHItem::FPFHItem (QString name, const pcl::PointCloud<pcl::FPFHSignature33>::Ptr& fpfh_ptr, double radius)
   : CloudComposerItem (std::move(name))
@@ -36,11 +36,11 @@ pcl::cloud_composer::FPFHItem::~FPFHItem ()
 QMap <QString, QWidget*>
 pcl::cloud_composer::FPFHItem::getInspectorTabs ()
 {  
-  //Create the plotter and QVTKWidget if it doesn't exist
+  //Create the plotter and QVTKOpenGLNativeWidget if it doesn't exist
   if (!plot_)
   {
     plot_.reset (new pcl::visualization::PCLPlotter);
-    qvtk_ = new QVTKWidget ();
+    qvtk_ = new QVTKOpenGLNativeWidget ();
     hist_page_ = new QWidget ();
     QGridLayout *mainLayout = new QGridLayout (hist_page_);
     mainLayout-> addWidget (qvtk_,0,0);
