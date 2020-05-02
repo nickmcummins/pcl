@@ -6,6 +6,8 @@
 #include <pcl/impl/instantiate.hpp>
 #include <pcl/apps/cloud_composer/impl/cloud_item.hpp>
 
+#include <vtkRenderWindow.h>
+
 #include <QMessageBox>
 
 pcl::cloud_composer::CloudItem::CloudItem (QString name,

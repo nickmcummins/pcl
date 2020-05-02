@@ -13,6 +13,8 @@
 #include <pcl/apps/face_detection/face_detection_apps_utils.h>
 // clang-format on
 
+#include <vtkRenderWindow.h>
+
 #include <boost/filesystem.hpp>
 
 namespace bf = boost::filesystem;

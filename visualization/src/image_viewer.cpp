@@ -37,6 +37,7 @@
  */
 
 #include <vtkCallbackCommand.h>
+#include <vtkRendererCollection.h>
 #include <vtkCamera.h>
 #include <vtkImageSlice.h>
 #include <vtkImageSliceMapper.h>

@@ -48,6 +48,8 @@
 #include <pcl/point_cloud.h>
 #include <pcl/point_types.h>
 
+#include <vtkRenderWindow.h>
+
 #include <QMainWindow>
 #include <QMutex>
 #include <QTimer>

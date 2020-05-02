@@ -43,6 +43,8 @@
 #include <pcl/io/ensenso_grabber.h>
 #include <pcl/visualization/cloud_viewer.h>
 
+#include <vtkRenderWindow.h>
+
 using namespace std::chrono_literals;
 
 /** @brief Convenience typedef */

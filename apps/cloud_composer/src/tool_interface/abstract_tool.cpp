@@ -1,5 +1,7 @@
 #include <pcl/apps/cloud_composer/tool_interface/abstract_tool.h>
 
+#include <vtkRenderWindow.h>
+
 pcl::cloud_composer::AbstractTool::AbstractTool (PropertiesModel* parameter_model, QObject* parent) 
                       : QObject (parent) 
                       
