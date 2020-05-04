@@ -36,7 +36,7 @@
 
 #pragma once
 
-#include <QVTKWidget.h>
+#include <QVTKOpenGLNativeWidget.h>
 
 #include <vtkSmartPointer.h>
 
@@ -47,7 +47,7 @@ namespace modeler {
 
 class RenderWindowItem;
 
-class RenderWindow : public QVTKWidget {
+class RenderWindow : public QVTKOpenGLNativeWidget {
 public:
   RenderWindow(RenderWindowItem* render_window_item,
                QWidget* parent = nullptr,

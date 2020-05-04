@@ -7,15 +7,15 @@
 
 #include <QDebug>
 
-#include <QVTKWidget.h>
+#include <QVTKOpenGLNativeWidget.h>
 
 pcl::cloud_composer::CloudView::CloudView (QWidget* parent)
   : QWidget (parent)
 {
   vis_.reset (new pcl::visualization::PCLVisualizer ("", false));
   vis_->getInteractorStyle ()->setKeyboardModifier (pcl::visualization::INTERACTOR_KB_MOD_SHIFT);
-  //Create the QVTKWidget
-  qvtk_ = new QVTKWidget (this);
+  //Create the QVTKOpenGLNativeWidget
+  qvtk_ = new QVTKOpenGLNativeWidget (this);
   qvtk_->SetRenderWindow (vis_->getRenderWindow ());
   initializeInteractorSwitch ();
   vis_->setupInteractor (qvtk_->GetInteractor (), qvtk_->GetRenderWindow (), style_switch_);
@@ -30,8 +30,8 @@ pcl::cloud_composer::CloudView::CloudView (ProjectModel* model, QWidget* parent)
   model_ = model;
   vis_.reset (new pcl::visualization::PCLVisualizer ("", false));
  // vis_->getInteractorStyle ()->setKeyboardModifier (pcl::visualization::INTERACTOR_KB_MOD_SHIFT);
-  //Create the QVTKWidget
-  qvtk_ = new QVTKWidget (this);
+  //Create the QVTKOpenGLNativeWidget
+  qvtk_ = new QVTKOpenGLNativeWidget (this);
   qvtk_->SetRenderWindow (vis_->getRenderWindow ());
   initializeInteractorSwitch ();
   vis_->setupInteractor (qvtk_->GetInteractor (), qvtk_->GetRenderWindow (), style_switch_);

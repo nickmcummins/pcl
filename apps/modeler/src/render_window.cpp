@@ -52,7 +52,7 @@
 pcl::modeler::RenderWindow::RenderWindow(RenderWindowItem* render_window_item,
                                          QWidget* parent,
                                          Qt::WindowFlags flags)
-: QVTKWidget(parent, flags)
+: QVTKOpenGLNativeWidget(parent, flags)
 , axes_(vtkSmartPointer<vtkCubeAxesActor>::New())
 , render_window_item_(render_window_item)
 {
@@ -105,7 +105,7 @@ pcl::modeler::RenderWindow::focusInEvent(QFocusEvent* event)
   dynamic_cast<SceneTree*>(render_window_item_->treeWidget())
       ->selectRenderWindowItem(render_window_item_);
 
-  QVTKWidget::focusInEvent(event);
+  QVTKOpenGLNativeWidget::focusInEvent(event);
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////
