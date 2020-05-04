@@ -1,4 +1,4 @@
-FROM pointcloudlibrary/env:19.04
+FROM pointcloudlibrary/env:20.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -11,4 +11,4 @@ RUN apt-get update \
       pandoc \
  && rm -rf /var/lib/apt/lists/*
 
-RUN pip3 install Jinja2==2.8.1 sphinx sphinxcontrib-doxylink requests grip
+RUN pip3 install Jinja2 sphinx sphinxcontrib-doxylink sphinx_rtd_theme requests grip
