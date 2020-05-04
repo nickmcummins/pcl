@@ -137,7 +137,7 @@ pcl::visualization::PCLVisualizerInteractorStyle::saveCameraParameters (const st
 {
   FindPokedRenderer (Interactor->GetEventPosition ()[0], Interactor->GetEventPosition ()[1]);
 
-  ofstream ofs_cam (file.c_str ());
+  std::ofstream ofs_cam (file.c_str ());
   if (!ofs_cam.is_open ())
   {
     return (false);
