@@ -37,6 +37,7 @@
  */
 
 #include <pcl/visualization/point_picking_event.h>
+#include <vtkRendererCollection.h>
 #include <pcl/visualization/interactor_style.h>
 #include <vtkVersion.h>
 #include <vtkPointPicker.h>

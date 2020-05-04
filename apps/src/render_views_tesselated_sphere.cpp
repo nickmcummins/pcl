@@ -26,6 +26,7 @@
 #include <vtkTransformFilter.h>
 #include <vtkTriangle.h>
 #include <vtkWorldPointPicker.h>
+#include <vtkIdTypeArray.h>
 
 #include <array>
 

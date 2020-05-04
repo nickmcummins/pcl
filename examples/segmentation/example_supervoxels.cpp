@@ -14,6 +14,7 @@
 #include <vtkImageData.h>
 #include <vtkImageFlip.h>
 #include <vtkPolyLine.h>
+#include <vtkRenderWindow.h>
 
 using namespace std::chrono_literals;
 

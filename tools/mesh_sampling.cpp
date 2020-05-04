@@ -45,6 +45,7 @@
 #include <vtkTriangle.h>
 #include <vtkTriangleFilter.h>
 #include <vtkPolyDataMapper.h>
+#include <vtkRenderWindow.h>
 #include <pcl/filters/voxel_grid.h>
 #include <pcl/console/print.h>
 #include <pcl/console/parse.h>

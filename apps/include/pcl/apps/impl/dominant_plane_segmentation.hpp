@@ -38,6 +38,8 @@
 #include <pcl/visualization/pcl_visualizer.h>
 #include <pcl/memory.h> // for pcl::make_shared
 
+#include <vtkRenderWindow.h>
+
 template <typename PointType>
 void
 pcl::apps::DominantPlaneSegmentation<PointType>::compute_table_plane()

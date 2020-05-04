@@ -65,6 +65,7 @@
 #include <Eigen/Geometry>
 
 #include <vtkPolyDataReader.h>
+#include <vtkRenderWindow.h>
 
 #include <GL/glew.h>
 

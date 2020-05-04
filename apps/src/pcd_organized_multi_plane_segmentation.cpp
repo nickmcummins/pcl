@@ -46,6 +46,8 @@
 #include <pcl/visualization/pcl_visualizer.h>
 #include <pcl/ModelCoefficients.h>
 
+#include <vtkRenderWindow.h>
+
 template <typename PointT>
 class PCDOrganizedMultiPlaneSegmentation {
 private:
