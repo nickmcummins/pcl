@@ -31,7 +31,7 @@ class vtkPolyData;
 class vtkRenderer;
 class vtkRenderWindow;
 class vtkShader2;
-class vtkShaderProgram2;
+class vtkShaderProgram;
 class vtkVertexBufferObject;
 
 class PCL_EXPORTS vtkVertexBufferObjectMapper : public vtkMapper
@@ -56,7 +56,7 @@ public:
   void SetInput(vtkDataSet *input);
   vtkPolyData *GetInput();
   
-  void SetProgram(vtkSmartPointer<vtkShaderProgram2> program)
+  void SetProgram(vtkSmartPointer<vtkShaderProgram> program)
   {
     this->program = program;
   }
@@ -118,7 +118,7 @@ protected:
   vtkVertexBufferObject *normalVbo;
 //  vtkVertexBufferObject *normalIndiceVbo;
 
-  vtkSmartPointer<vtkShaderProgram2> program;
+  vtkSmartPointer<vtkShaderProgram> program;
 
   int FillInputPortInformation(int, vtkInformation*) override;
 
