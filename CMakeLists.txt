@@ -397,8 +397,8 @@ if(WITH_VTK AND NOT ANDROID)
   if(VTK_FOUND)
     if(NOT DEFINED VTK_RENDERING_BACKEND)
       # On old VTK versions this variable does not exist. In this case it is
-      # safe to assume OpenGL backend
-      set(VTK_RENDERING_BACKEND "OpenGL")
+      # safe to assume OpenGL2 backend
+      set(VTK_RENDERING_BACKEND "OpenGL2")
     endif()
     list(APPEND PCL_VTK_COMPONENTS RenderingContext${VTK_RENDERING_BACKEND})
 
