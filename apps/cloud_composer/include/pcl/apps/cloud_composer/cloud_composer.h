@@ -59,7 +59,7 @@ namespace pcl
      * \author Jeremie Papon
      * \ingroup cloud_composer
      * The following member objects are defined in the ui file and can be manipulated:
-     *    * cloud_viewer_ is the view which contains the PCLVisualizer & QVTKWidget
+     *    * cloud_viewer_ is the view which contains the PCLVisualizer & QVTKOpenGLNativeWidget
      *    * cloud_browser_ is the tree view in the left dock
      *    * item_inspector_ is the details view in the left dock
      *    * tool_box_view_ is the tool box in right dock
