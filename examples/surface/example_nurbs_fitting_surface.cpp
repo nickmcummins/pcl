@@ -7,6 +7,8 @@
 #include <pcl/surface/on_nurbs/fitting_curve_2d_asdm.h>
 #include <pcl/surface/on_nurbs/triangulation.h>
 
+#include <vtkRenderWindow.h>
+
 using Point = pcl::PointXYZ;
 
 void

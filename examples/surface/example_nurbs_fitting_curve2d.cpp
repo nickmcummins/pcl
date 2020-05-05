@@ -7,6 +7,8 @@
 
 #include <pcl/visualization/pcl_visualizer.h>
 
+#include <vtkRenderWindow.h>
+
 pcl::visualization::PCLVisualizer viewer ("Curve Fitting 2D");
 
 void
