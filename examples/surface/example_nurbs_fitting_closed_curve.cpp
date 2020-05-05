@@ -9,6 +9,8 @@
 
 #include <pcl/visualization/pcl_visualizer.h>
 
+#include <vtkRenderWindow.h>
+
 pcl::visualization::PCLVisualizer viewer ("Curve Fitting PDM (red), SDM (green), TDM (blue)");
 
 void

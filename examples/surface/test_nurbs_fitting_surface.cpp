@@ -6,6 +6,8 @@
 #include <pcl/surface/on_nurbs/fitting_surface_tdm.h>
 #include <pcl/surface/on_nurbs/triangulation.h>
 
+#include <vtkRenderWindow.h>
+
 using Point = pcl::PointXYZ;
 
 void
