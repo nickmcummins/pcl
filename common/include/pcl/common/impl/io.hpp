@@ -145,7 +145,7 @@ copyPointCloud (const pcl::PointCloud<PointInT> &cloud_in,
 
 template <typename PointT, typename IndicesVectorAllocator> void
 copyPointCloud (const pcl::PointCloud<PointT> &cloud_in,
-                const std::vector<int, IndicesVectorAllocator> &indices,
+                const IndicesAllocator< IndicesVectorAllocator> &indices,
                 pcl::PointCloud<PointT> &cloud_out)
 {
   // Do we want to copy everything?
@@ -172,7 +172,7 @@ copyPointCloud (const pcl::PointCloud<PointT> &cloud_in,
 
 template <typename PointInT, typename PointOutT, typename IndicesVectorAllocator> void
 copyPointCloud (const pcl::PointCloud<PointInT> &cloud_in,
-                const std::vector<int, IndicesVectorAllocator> &indices,
+                const IndicesAllocator< IndicesVectorAllocator> &indices,
                 pcl::PointCloud<PointOutT> &cloud_out)
 {
   // Allocate enough space and copy the basics
@@ -423,7 +423,7 @@ copyPointCloud (const pcl::PointCloud<PointT> &cloud_in, pcl::PointCloud<PointT>
                     cloud_out.width * sizeof (PointT));
           }
         }
-        catch (pcl::BadArgumentException &e)
+        catch (pcl::BadArgumentException&)
         {
           PCL_ERROR ("[pcl::copyPointCloud] Unhandled interpolation type %d!\n", border_type);
         }
