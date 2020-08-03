@@ -67,7 +67,6 @@ using namespace pcl::console;
 using namespace pcl::io;
 using namespace pcl::simulation;
 
-using namespace std;
 using namespace std::chrono_literals;
 
 std::uint16_t t_gamma[2048];
