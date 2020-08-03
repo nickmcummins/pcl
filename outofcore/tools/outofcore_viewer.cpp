@@ -74,6 +74,8 @@
 #include <pcl/outofcore/visualization/scene.h>
 #include <pcl/outofcore/visualization/viewport.h>
 
+#include <vtkShaderProgram.h>
+
 using namespace pcl;
 using namespace pcl::outofcore;
 

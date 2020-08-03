@@ -1,5 +1,7 @@
 #include <pcl/apps/cloud_composer/items/cloud_composer_item.h>
 
+#include <vtkRenderWindow.h>
+
 #include <QDebug>
 
 pcl::cloud_composer::CloudComposerItem::CloudComposerItem (const QString& name)

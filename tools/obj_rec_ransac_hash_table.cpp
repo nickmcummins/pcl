@@ -55,6 +55,7 @@
 #include <vtkDataArray.h>
 #include <vtkPointData.h>
 #include <vtkGlyph3D.h>
+#include <vtkRenderWindow.h>
 #include <cstdio>
 #include <thread>
 

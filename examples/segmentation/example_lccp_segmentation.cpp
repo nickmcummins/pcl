@@ -46,6 +46,7 @@
 #include <pcl/segmentation/lccp_segmentation.h>
 
 #include <vtkPolyLine.h>
+#include <vtkRenderWindow.h>
 
 using namespace std::chrono_literals;
 

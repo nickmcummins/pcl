@@ -41,6 +41,8 @@
 #include <pcl/apps/cloud_composer/items/cloud_item.h>
 #include <pcl/apps/cloud_composer/properties_model.h>
 
+#include <vtkRenderWindow.h>
+
 #include <QDebug>
 
 namespace pcl

@@ -45,6 +45,8 @@
 
 #include <cstdio>
 
+#include <vtkRenderWindow.h>
+
 template <typename PointT>
 class PCDOrganizedMultiPlaneSegmentation {
 private:

@@ -1,6 +1,8 @@
 #include <pcl/apps/cloud_composer/items/normals_item.h>
 #include <pcl/apps/cloud_composer/items/cloud_item.h>
 
+#include <vtkRenderWindow.h>
+
 #include <QDebug>
 
 pcl::cloud_composer::NormalsItem::NormalsItem (QString name, const pcl::PointCloud<pcl::Normal>::Ptr& normals_ptr, double radius)

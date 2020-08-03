@@ -53,6 +53,8 @@
 
 #include <pcl/io/png_io.h>
 
+#include <vtkRendererCollection.h>
+
 #include <iostream>
 #include <fstream>
 

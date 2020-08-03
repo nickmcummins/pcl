@@ -43,6 +43,8 @@
 #include <pcl/visualization/pcl_visualizer.h>
 #include <pcl/point_types.h>
 
+#include <vtkRenderWindow.h>
+
 void
 usage(char** argv)
 {

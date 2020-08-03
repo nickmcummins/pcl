@@ -9,6 +9,8 @@
 #include <pcl/segmentation/sac_segmentation.h>
 #include <pcl/visualization/pcl_visualizer.h>
 
+#include <vtkRenderWindow.h>
+
 #include <thread>
 
 using namespace pcl;

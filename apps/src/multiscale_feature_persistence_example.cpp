@@ -44,6 +44,8 @@
 #include <pcl/visualization/cloud_viewer.h>
 #include <pcl/memory.h>
 
+#include <vtkRenderWindow.h>
+
 using namespace pcl;
 
 const Eigen::Vector4f subsampling_leaf_size(0.01f, 0.01f, 0.01f, 0.0f);

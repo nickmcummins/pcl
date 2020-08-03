@@ -34,6 +34,8 @@
 #include <pcl/pcl_config.h>
 #include <pcl/point_types.h>
 
+#include <vtkRenderWindow.h>
+
 #include <Eigen/Dense>
 
 #include <GL/glew.h>

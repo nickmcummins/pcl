@@ -42,6 +42,8 @@
 #include <pcl/registration/icp_nl.h>
 #include <pcl/visualization/registration_visualizer.h>
 
+#include <vtkRenderWindow.h>
+
 int
 main (int argc, char** argv)
 {

@@ -32,7 +32,7 @@ class vtkPolyData;
 class vtkRenderer;
 class vtkRenderWindow;
 class vtkShader2;
-class vtkShaderProgram2;
+class vtkShaderProgram;
 class vtkVertexBufferObject;
 
 class PCL_DEPRECATED(1, 13, "The OpenGL backend of VTK is deprecated. Please switch to the OpenGL2 backend.")
@@ -58,7 +58,7 @@ public:
   void SetInput(vtkDataSet *input);
   vtkPolyData *GetInput();
   
-  void SetProgram(vtkSmartPointer<vtkShaderProgram2> program)
+  void SetProgram(vtkSmartPointer<vtkShaderProgram> program)
   {
     this->program = program;
   }
@@ -120,7 +120,7 @@ protected:
   vtkVertexBufferObject *normalVbo;
 //  vtkVertexBufferObject *normalIndiceVbo;
 
-  vtkSmartPointer<vtkShaderProgram2> program;
+  vtkSmartPointer<vtkShaderProgram> program;
 
   int FillInputPortInformation(int, vtkInformation*) override;
 

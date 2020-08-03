@@ -36,6 +36,8 @@
 
 #include <pcl/visualization/range_image_visualizer.h>
 
+#include <vtkRendererCollection.h>
+
 pcl::visualization::RangeImageVisualizer::RangeImageVisualizer (const std::string& name) : ImageViewer (name)
 {
 }

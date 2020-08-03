@@ -50,6 +50,7 @@
 #include <vtkTextProperty.h>
 #include <vtkRenderWindow.h>
 #include <vtkRenderer.h>
+#include <vtkRendererCollection.h>
 #include <vtkDataObject.h>
 #include <vtkProperty2D.h>
 #include <vtkFieldData.h>

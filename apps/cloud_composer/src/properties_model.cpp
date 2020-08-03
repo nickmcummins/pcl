@@ -1,6 +1,8 @@
 #include <pcl/apps/cloud_composer/properties_model.h>
 #include <pcl/apps/cloud_composer/items/cloud_composer_item.h>
 
+#include <vtkRenderWindow.h>
+
 #include <QDebug>
 
 pcl::cloud_composer::PropertiesModel::PropertiesModel (QObject* parent)

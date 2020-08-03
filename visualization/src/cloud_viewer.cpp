@@ -40,6 +40,8 @@
 #include <pcl/visualization/boost.h>
 #include <pcl/memory.h>
 
+#include <vtkRenderWindow.h>
+
 #include <mutex>
 #include <thread>
 
