@@ -13,6 +13,7 @@
 #include <pcl/filters/radius_outlier_removal.h>
 #include <pcl/filters/voxel_grid.h>
 #include <pcl/memory.h> // for pcl::make_shared
+#include <pcl/types.h>  // for pcl::index_t
 
 namespace pcl {
 namespace rec_3d_framework {
@@ -29,9 +30,8 @@ class PreProcessorAndNormalEstimator {
     KdTreeInPtr tree = pcl::make_shared<pcl::KdTreeFLANN<PointInT>>(false);
     tree->setInputCloud(input);
 
-    std::vector<int> nn_indices(9);
+    pcl::Indices nn_indices(9);
     std::vector<float> nn_distances(9);
-    std::vector<int> src_indices;
 
     float sum_distances = 0.0;
     std::vector<float> avg_distances(input->size());
@@ -187,7 +187,7 @@ public:
       // check nans before computing normals
       {
         pcl::ScopeTime t("check nans...");
-        std::size_t j = 0;
+        pcl::index_t j = 0;
         for (const auto& point : *out) {
           if (!isXYZFinite(point))
             continue;
@@ -196,8 +196,8 @@ public:
           j++;
         }
 
-        if (j != static_cast<int>(out->size())) {
-          PCL_ERROR("Contain nans...");
+        if (j != static_cast<pcl::index_t>(out->size())) {
+          PCL_ERROR("Contain nans...\n");
         }
 
         out->points.resize(j);
